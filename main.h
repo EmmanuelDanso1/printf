@@ -1,30 +1,23 @@
-#ifndef MAIN_H
-#define MAIN_H
-#include <limits.h>
-#include <stdio.h>
-#include <stdarg.h>
+#ifndef _main_h_
+#define _main_h_
 #include <stdlib.h>
+#include <stdarg.h>
 #include <unistd.h>
+#include <stdio.h>
+#include <limits.h>
 /**
-* struct dict - struct for printer functions
-* @pages: specifics
-* @print: points to a printer functions
+* struct diction - struct for printer functions
+* @specs: specifier
+* @print: pointer to a printer functions
+*
 * Description: struct that stores pointers to a
 * printer functions.
 */
-typedef struct dict
+typedef struct diction
 {
-char *pages;
+char *specs;
 int (*print)(va_list, char *, unsigned int);
 } dict_type;
-int print_b_binary(va_list args, char *buffer, unsigned int buffer_i);
-int print_i(va_list args);
-int print_d(va_list args);
-int _strlen(char *s);
-int print_modulo(void);
-int print_c_char(va_list args);
-int print_s_string(va_list args);
-int _putchar(char c);
-int _printf(const char *format, ...);
+#define BUFF_SIZE 1024
 int print_rot13(va_list args, char *buffer, unsigned int buf_i);
 #endif
