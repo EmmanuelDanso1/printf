@@ -22,4 +22,5 @@ int (*print)(va_list, char *, unsigned int);
 unsigned int hand_buff(char *buffer, char c, unsigned int buf_i)
 int print_rot13(va_list args, char *buffer, unsigned int buf_i);
 int display_buff(char *buffer, unsigned int bytes)
+int print_reverse(va_list args, char *buffer, unsigned int buf_i)
 #endif
