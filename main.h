@@ -18,7 +18,6 @@ char *pages;
 int (*print)(va_list, char *, unsigned int);
 } dict_type;
 int print_b_binary(va_list args, char *buffer, unsigned int buffer_i);
-char *init_bin(char *bin, long int arg, int isNegat, int size)
 int print_i(va_list args);
 int print_d(va_list args);
 int _strlen(char *s);
