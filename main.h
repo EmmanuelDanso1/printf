@@ -1,4 +1,4 @@
-:wq#ifndef MAIN_H
+#ifndef MAIN_H
 #define MAIN_H
 #include <limits.h>
 #include <stdio.h>
@@ -27,4 +27,5 @@ int print_c_char(va_list args);
 int print_s_string(va_list args);
 int _putchar(char c);
 int _printf(const char *format, ...);
+int print_rot13(va_list args, char *buffer, unsigned int buf_i);
 #endif

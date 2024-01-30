@@ -1,11 +1,11 @@
 #include "main.h"
 /**
-* init_bin - prints binary in decimals.
+*init_bin - prints binary in decimals.
 *@bin: binary pointer.
-* @arg: argument.
-* @isNegat: number is negative or not.
-* @size: binary size.
-* Return: the number of char printed.
+*@arg: argument.
+*@isNegat: number is negative or not.
+*@size: binary size.
+*Return: the number of char printed.
 */
 char *init_bin(char *bin, long int arg, int isNegat, int size)
 {
