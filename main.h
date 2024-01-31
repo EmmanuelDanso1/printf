@@ -27,4 +27,5 @@ int print_unsigned_int(va_list args, char *buffer, unsigned int buffer_i);
 unsigned int temp, digt, divisor, index;
 char *init_bin(char *bin, long int arg, int is_negat, int size);
 char *init_hex(char *hexa, char *bin, int size, int uppercase);
+char *init_oct(char *oct, char *binary);
 #endif
