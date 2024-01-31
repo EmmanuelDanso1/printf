@@ -28,4 +28,6 @@ unsigned int temp, digt, divisor, index;
 char *init_bin(char *bin, long int arg, int is_negat, int size);
 char *init_hex(char *hexa, char *bin, int size, int uppercase);
 char *init_oct(char *oct, char *binary);
+int print_address(va_list args, char *buffer, unsigned int buffer_i);
+int print_binary(va_list args, char *buffer, unsigned int buffer_i);
 #endif
