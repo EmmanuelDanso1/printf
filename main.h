@@ -30,4 +30,5 @@ char *init_hex(char *hexa, char *bin, int size, int uppercase);
 char *init_oct(char *oct, char *binary);
 int print_address(va_list args, char *buffer, unsigned int buffer_i);
 int print_binary(va_list args, char *buffer, unsigned int buffer_i);
+int print_char(va_list args, char *buffer, unsigned int buffer_i);
 #endif
